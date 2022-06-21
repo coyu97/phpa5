@@ -14,7 +14,7 @@ Route::get('/', function(){
 
 
 Route::post('/post', [PostController::class, 'postMessage'])->name("post"); 
-Route::get('/get', [PostController::class, "postMessage"]);
+Route::get('/post/', [PostController::class, "index"]);
 
 
 Route::post('/logout',[LogoutController::class,'store'])->name('logout');
